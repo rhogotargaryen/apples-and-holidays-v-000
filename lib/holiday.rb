@@ -43,7 +43,7 @@ def all_holidays_with_bbq(holiday_hash)
   # return an array of holiday names (as symbols) where supply lists
   # include the string "BBQ"
   holiday_hash.each do |seas, hols|
-    hols.each do |hol, s_arr|
+    hols.collect do |hol, s_arr|
       if s_arr.include? "BBQ"
         puts hol
       end
