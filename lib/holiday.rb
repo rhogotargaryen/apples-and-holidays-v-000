@@ -45,7 +45,7 @@ def all_holidays_with_bbq(holiday_hash)
   holiday_hash.each do |seas, hols|
     hols.collect do |hol, s_arr|
       if s_arr.include? "BBQ"
-        puts hol
+        bbq_arr << hol
       end
     end
   end
